@@ -1,0 +1,230 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+body {
+    display: flex;
+    background: linear-gradient(rgb(148, 148, 238), navy);
+    justify-content: center;
+    background-size: cover;
+    background-position: center;
+    align-items: center;
+    min-height: 100vh;
+}  
+
+main {
+    display: flex;
+    width: 1200px;
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+}
+
+/* LEFT */
+.left{
+    width: 500px;   
+    height: 100%;
+    margin: 30px 30px;
+    display: flex;
+    flex-direction: column;
+}
+
+.logo h3 {
+    font-size: 25px;
+    cursor: default;
+}
+
+.logo { 
+    display: flex;
+    align-items: center;
+    color: navy;
+    font-weight: 600;
+}
+
+.logo i {
+    font-size: 30px;
+}
+
+.left img {
+    
+    box-sizing: border-box;
+    width: 100%;
+    width: 500px;
+    height: 100%;    
+    background-position: center center;
+}
+
+/* RIGHT */
+.right{
+    width: 100%;
+    max-width: 700px;
+    margin: 30px 30px 30px 0;
+    display: flex;
+    flex-direction: column;
+}   
+
+.login {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}   
+
+.login p {
+    font-size: 15px;
+    margin-right: 20px;
+    color:rgb(129, 129, 129);
+    cursor: default;
+}
+
+.login .signIn{
+    margin-left: 5px;
+    border: 1px solid rgba(0, 0, 128, 0.2);
+    outline: none;
+    width: 80px;
+    height: 25px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-weight: 500;
+    color: navy;
+    box-shadow: 0 0 3px rgba(0, 0, 0, .2);
+    background-color: white;
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+.login .signIn:hover {
+    background-color: navy;
+    color: white;
+    box-shadow: 0 0 3px rgba(0, 0, 0, .2);
+}
+
+.right .heading{
+    margin: 30px 0 30px 0;
+    cursor: default;
+}
+
+.heading h2{
+    font-size: 45px;
+}   
+
+.heading p {
+    font-size: 18px;
+    color: rgb(129, 129, 129);
+}
+
+.right .lgn {
+    width: 200px;
+    text-align: center;
+    height: 40px;
+    border: none;
+    outline: none;
+    margin: 30px 0 30px 0;
+    background-color: navy;
+    color: white;
+    border-radius: 40px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, .2);
+    transition: transform 0.3s ease-in-out;
+}  
+
+.right .lgn:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease-in-out;
+}
+
+
+.otherLogin {
+    display: flex;
+    align-items: center
+}
+
+.otherLogin p {
+    color: rgb(129, 129, 129);
+    cursor: default;
+}
+
+.otherLogin a img {
+    width: 35px;
+    height: auto;
+    margin-left: 15px;
+    border: 1px solid rgba(129, 129, 129, 0.2);
+    padding: 3px;
+    border-radius: 5px;
+    box-shadow: 0 0 3px rgba(0, 0, 0, .2);
+}
+
+.right .input {
+    display: flex;
+    flex-direction: column;
+}
+
+.input label {
+    font-size: 18px;
+    font-weight: 600;
+    margin: 10px 0 5px 0;
+}
+
+.input input {
+    width: 100%;
+    height: 40px;
+    border-radius: 7px;
+    padding: 12px;
+    color: rgb(0, 0, 0);
+    font-size: 17px;
+    border: 1px solid rgba(129, 129, 129, 0.2);
+    box-shadow: 0 0 3px rgba(0, 0, 0, .2);
+}
+
+.input input::placeholder {
+    color: rgb( 129, 129, 129);
+}
+
+.input input:focus {
+    border: 2px solid navy;
+    box-shadow: 0 0 8px rgba(0, 0, 0, .2);
+    outline: none;
+}
+
+
+@media (max-width: 800px) {
+    main {
+        flex-direction: column;
+    }
+
+    .left {
+        margin: 20px auto;
+    }
+
+    .left img {
+        max-width: 100%;
+        height: auto;
+        background-position: center center;
+    }
+
+    .left .logo h3 {
+        margin: 20px;
+    }
+
+    .right {
+        margin: 20px auto;
+        width: 90%;
+    }
+
+    .login, .heading {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .login p, .otherLogin p {
+        margin: 10px 0;
+    }
+
+    .input {
+        width: 100%;
+    }
+}
