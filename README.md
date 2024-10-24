@@ -1,2 +1,2 @@
 # Practice
-Preactice Project (HTML,CSS,JavaScript
+Preactice Project (HTML,CSS,JavaScript)
